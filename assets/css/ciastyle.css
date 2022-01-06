@@ -95,6 +95,11 @@ small,
   text-decoration: none;
 }
 
+/* BANNER*/
+.parallax .image {
+  padding-top: 15rem;
+}
+
 /*SEÇÕES PADRÃO*/
 .section-darkgrey {
   background-color: #adadac;
@@ -340,6 +345,14 @@ p.description {
   transition: all 150ms ease-out;
 }
 
+.btn-small {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #d3b9b8;
+  border-color: #d3b9b8;
+  float: right;
+}
+
 *::selection {
   background: #e78b90;
   color: #ffffff;
@@ -372,4 +385,25 @@ p.description {
   z-index: 100;
   display: block;
   margin-top: 5vh;
+}
+
+/* LOGING */
+
+h2.tag-area {
+  background-color: #af8685;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card.login {
+  padding: 1rem;
+}
+
+.form-control {
+  margin-bottom: 1rem;
 }
