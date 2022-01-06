@@ -1,0 +1,375 @@
+/* =========================================================
+=========================================================
+* Cia 380 - v1.0.1
+=========================================================
+
+* Developed by: https://www.rdmarketing.com.br
+* Copyright 2021
+
+
+========================================================= */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+}
+@media (min-width: 58em) {
+  body {
+    font-size: 100%;
+  }
+}
+@media (min-width: 115em) {
+  body {
+    font-size: 110%;
+  }
+}
+@media (min-width: 125em) {
+  body {
+    font-size: 115%;
+  }
+}
+@media (min-width: 145em) {
+  body {
+    font-size: 120%;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body {
+    font-feature-settings: normal;
+    /* Internet Explorer fix */
+  }
+}
+
+header {
+  position: absolute;
+}
+
+p,
+label,
+.btn,
+.form-control,
+.title h5,
+.navbar,
+.brand,
+.btn-simple,
+a,
+.td-name,
+td,
+small,
+.media h5,
+.subtitle {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.logo {
+  width: 20rem;
+}
+
+.navbar {
+  padding: 0 10rem;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+.navbar.navbar-fixed-top {
+  transition: all 0.5s 0.1s;
+  position: fixed;
+  z-index: 100;
+}
+.navbar .navbar-nav.navbar-uppercase > li > a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/*SEÇÕES PADRÃO*/
+.section-darkgrey {
+  background-color: #adadac;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.section-darkgrey .text-white {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.section-darkgrey-small {
+  background-color: #adadac;
+  padding-bottom: 75px;
+  padding-top: 100px;
+}
+
+/*SEÇÃO BLOG POSTS*/
+
+.blogboxfilter {
+  background: #aaaaaa;
+  background-blend-mode: multiply;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.blogbox {
+  background-size: cover;
+  height: 350px;
+  width: 250px;
+}
+
+p.blogboxtext {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 30px 25px 30px 25px;
+  vertical-align: middle;
+}
+
+/* SEÇÃO CONTATO*/
+
+.section-get-started .parallax,
+.section-get-started .static-image,
+.section-header-freebie .parallax,
+.section-header-freebie .static-image,
+.section-our-team-freebie .parallax,
+.section-our-team-freebie .static-image {
+  height: auto;
+}
+
+.section .parallax,
+.section .static-image {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.section-get-started .fa-phone {
+  margin-top: 10px;
+  margin-right: 50px;
+  font-size: 50px !important;
+}
+
+p.contato {
+  font-size: 20px;
+  font-family: Montserrat;
+  margin-bottom: 40px;
+}
+
+.centerdiv {
+  margin-bottom: 50px;
+}
+
+.filter {
+  position: relative;
+  height: 100%;
+  color: #ffffff;
+}
+
+.filter:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 3;
+  content: '';
+  opacity: 0.7;
+  background: #a5615f;
+}
+
+.icon {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  color: #ffffff;
+  height: 0px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  width: 0px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+}
+
+.icon i {
+  font-size: 25px;
+  position: absolute;
+  top: 8px;
+}
+
+.icon.social {
+  background: #ffffff;
+  color: #e78b90;
+  cursor: pointer;
+  float: left;
+  margin: 0 20px 0 0;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+.icon.social:hover {
+  background: #e78b90;
+  color: #ffffff;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+  -moz-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+  -ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+  -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+}
+
+.icon.social.fb i {
+  left: 10px;
+}
+
+.icon.social.in i {
+  left: 10px;
+}
+
+.icon.social.yt i {
+  left: 8px;
+}
+
+.projetos_img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.projetos_img_big {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.projetos_img_small {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* FOOTER*/
+
+.footer {
+  background-color: #d1cec7;
+  line-height: 20px;
+  /*border-top: 1px solid #DDDDDD;*/
+  overflow: hidden;
+  padding-top: 15px;
+}
+
+.footer .copyright {
+  color: #ffffff;
+  padding: 10px 15px;
+  margin: 15px 3px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.footer .copyright a {
+  color: #ffffff;
+  font-size: 15px;
+  margin: 10px 0px 20px;
+}
+
+.footer .main-footer-text {
+  color: #ffffff;
+  flex-direction: row;
+  font-family: Montserrat;
+  font-size: 15px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Parágrafos */
+p.description {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 100;
+  color: #ffffff;
+
+  vertical-align: middle;
+}
+
+/* Botões */
+.btn {
+  border-width: 1px;
+  background-color: #af8685;
+  font-weight: 200;
+  border-radius: 3px;
+  line-height: 1.6em;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  padding: 25px 70px;
+  border-color: #af8685;
+  color: #ffffff;
+  font-family: Montserrat;
+  margin-bottom: 25px;
+  border-radius: 40px;
+  font-size: 15px;
+  transition: all 150ms ease-out;
+}
+
+*::selection {
+  background: #e78b90;
+  color: #ffffff;
+}
+
+.section {
+  position: relative;
+}
+
+.section-small .parallax .image,
+.section-small .static-image .image,
+.section-get-started .parallax .image,
+.section-get-started .static-image .image {
+  height: 100vh !important;
+}
+
+.section .image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  display: block;
+}
+
+.section-get-started .container {
+  margin: 15vh auto;
+  position: relative;
+  z-index: 100;
+  display: block;
+  margin-top: 5vh;
+}
